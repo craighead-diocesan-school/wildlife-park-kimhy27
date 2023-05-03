@@ -20,7 +20,7 @@
 
   <nav>
     <div class="nav-items">
-          <a href="Home.html">Home</a> 
+          <a href="index.html">Home</a> 
           <a href="Area.html">Area</a> 
           <a href="Meetourstars.html">Meet Our Stars!</a> 
           <a href="Aboutus.html">About us</a>
@@ -78,5 +78,31 @@
   nav a:hover {
   color: #fff;
   }
+
+  body {
+    /* display: grid;
+    grid: " h    h    h  " auto
+          " m    m    . " auto
+          " .    f    .  " auto
+          / auto auto auto; */
+
+    /* display: grid;
+    grid: " h    h    h  " auto
+          " m    m    . " auto
+          " .    f    .  " auto
+          / auto auto auto; */
+
+    display: grid;
+    grid: " .    h    h    . " auto
+          " n    n    n    n " auto
+          " m    m    m    m " auto
+          " f    f    f    f " auto
+          / auto auto auto;
+  }
+
+  header { grid-area: h; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+  nav    {grid-area: n;}
 
 </style>
